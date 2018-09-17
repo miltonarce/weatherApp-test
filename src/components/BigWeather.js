@@ -21,7 +21,7 @@ const BigWeather = ({
     </div>
     <div className="datos">
       <p>
-        <em>Date: {new Date(date * 1000).toDateString()}</em>
+        <em>Date: {new Date(date).toDateString()}</em>
       </p>
       <img
         src={`http://openweathermap.org/img/w/${icon}.png`}

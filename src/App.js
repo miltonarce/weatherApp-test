@@ -32,12 +32,15 @@ class App extends Component {
       loading: true
     });
 
-    const { data } = await weather.byCity.forecast(city);
+    try {
+      const data = await weather.byCity.forecast(city);
 
-    this.setState({
-      data,
-      loading: false
-    });
+      this.setState({ data });
+    } catch (error) {
+      this.setState({ error });
+    }
+
+    this.setState({ loading: false });
   }
 
   render() {
@@ -115,7 +118,7 @@ class App extends Component {
               humidity={main.main.humidity}
               wind={main.wind.speed}
               pressure={main.main.pressure}
-              date={main.dt}
+              date={main.dt_txt}
               format={format}
             />
           </Col>
@@ -134,7 +137,7 @@ class App extends Component {
                 humidity={day.main.humidity}
                 wind={day.wind.speed}
                 pressure={day.main.pressure}
-                date={day.dt}
+                date={day.dt_txt}
                 format={format}
               />
             </Col>
