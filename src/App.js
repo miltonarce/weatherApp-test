@@ -80,7 +80,7 @@ class App extends Component {
                 this.getForecast(e);
               }}
             >
-              <Option value="Buenos Aire">Buenos Aires</Option>
+              <Option value="Buenos Aires">Buenos Aires</Option>
               <Option value="London">London</Option>
               <Option value="New York">New York</Option>
               <Option value="Lima">Lima</Option>
