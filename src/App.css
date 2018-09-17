@@ -1,0 +1,91 @@
+body {
+  background: url("img/back.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+}
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+.api {
+  color: white;
+  padding: 7px;
+  margin: 10px;
+  width: 230px;
+  text-align: center;
+}
+.titles {
+  color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+.temp {
+  color: orangered;
+}
+.nameCity {
+  background: orangered;
+  color: white;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  padding: 3px 6px;
+}
+.App-title {
+  font-size: 1.5em;
+}
+.datos {
+  text-align: center;
+}
+.datosC {
+  text-align: center;
+  font-size: 12px;
+  border: 1px solid gray;
+  width: 50%;
+  margin: 5px auto;
+  border-radius: 3px;
+  transition: 0.5s;
+}
+.by {
+  margin-top: 30px;
+  color: white;
+  text-align: center;
+}
+.datosC:hover {
+  color: orangered;
+  border: 1px solid orangered;
+}
+.App-intro {
+  font-size: large;
+}
+.card {
+  background: whitesmoke;
+  border-radius: 4px;
+  border: 2px solid #ececec;
+  padding: 1px;
+  padding-bottom: 10px;
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.example {
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 30px 50px;
+  margin: 20px 0;
+}
